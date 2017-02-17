@@ -7,7 +7,7 @@ var Init = (function(){
 
      ballRadius : 10,
      x : canvas.width/2,
-     y : canvas.height-30,
+     y : canvas.height-20,
      dx : 2,
      dy : -2,
      paddleHeight : 10,
