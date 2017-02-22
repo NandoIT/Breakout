@@ -18,8 +18,18 @@ var Bricks = (function (){
             Init.breakout.fillStyle = "#0095DD";
             Init.breakout.fill();
             Init.breakout.closePath();
-              }
           }
+        }
+      },
+      brickHit : function(){
+        for(c=0; c < Init.brickColumnCount; c++) {
+             for(r=0; r < Init.brickRowCount; r++) {
+                 Init.b = Init.bricks[c][r];
+                 if(Init.x > Init.b.x && Init.x < Init.b.x+Init.brickWidth && Init.y > Init.b.y && Init.y < Init.b.y+Init.brickHeight) {
+                    Init.dy = -Init.dy;
+                }
+             }
+         }
       }
     }
 })();
