@@ -9,9 +9,14 @@ var MoveBall = (function(){
 
       if(Init.y + Init.dy < Init.ballRadius){
         Init.dy =- Init.dy;
-      }
-      else if (Init.y + Init.dy > Init.canvas.height-Init.ballRadius){
-        document.location.reload();
+      }else if (Init.y + Init.dy > Init.canvas.height-Init.ballRadius){
+        if(Init.x > Init.paddleX && Init.x < Init.paddleX + Init.paddleWidth){
+          Init.dy = -Init.dy;
+        }
+        else{
+          alert("Game over");
+          document.location.reload();
+          }
       }
       Init.x += Init.dx;
       Init.y += Init.dy;
