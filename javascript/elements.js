@@ -3,6 +3,7 @@ var Elements = (function(){
     drawElements : function(){
       Ball.drawBall();
       Paddle.drawPaddle();
+      Bricks.drawBricks();
     }
   }
 })();
