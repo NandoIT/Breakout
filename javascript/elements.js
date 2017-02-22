@@ -4,6 +4,7 @@ var Elements = (function(){
       Ball.drawBall();
       Paddle.drawPaddle();
       Bricks.drawBricks();
+      Bricks.brickHit();
     }
   }
 })();
