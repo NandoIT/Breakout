@@ -1,5 +1,4 @@
 (function () {
 	Elements.drawElements();
-
-window.addEventListener("keydown", MovePaddle.movePaddle, false);
+  window.addEventListener("keydown", MovePaddle.movePaddle, false);
 })();
