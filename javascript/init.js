@@ -10,11 +10,25 @@ var Init = (function(){
      y : canvas.height-20,
      dx : 2,
      dy : -2,
+
      paddleHeight : 10,
      paddleWidth : 65,
      paddleX : (canvas.width-65)/2,
+
      rightPressed : false,
      leftPressed : false,
+
+     brickRowCount : 3,
+     brickColumnCount : 6,
+     brickX : 0,
+     brickY : 0,
+     brickWidth : 55,
+     brickHeight : 20,
+     brickPadding : 20,
+     brickOffsetTop : 30,
+     brickOffsetLeft : 25,
+     bricks : [],
+
   }
 
 })();
