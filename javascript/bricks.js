@@ -15,7 +15,7 @@ var Bricks = (function (){
             Init.bricks[c][r].y = Init.brickY;
             Init.breakout.beginPath();
             Init.breakout.rect(Init.brickX, Init.brickY, Init.brickWidth, Init.brickHeight);
-            Init.breakout.fillStyle = "#0095DD";
+            Init.breakout.fillStyle = "#CC4B4B";
             Init.breakout.fill();
             Init.breakout.closePath();
           }
