@@ -18,18 +18,18 @@ var Init = (function(){
      rightPressed : false,
      leftPressed : false,
 
-     brickRowCount : 3,
-     brickColumnCount : 6,
+     brickRowCount : 4,
+     brickColumnCount : 9,
      brickX : 0,
      brickY : 0,
-     b : 0,
      brickWidth : 55,
      brickHeight : 20,
      brickPadding : 20,
      brickOffsetTop : 30,
-     brickOffsetLeft : 25,
+     brickOffsetLeft : 10,
      bricks : [],
 
   }
+
 
 })();
