@@ -1,14 +1,18 @@
 var Bricks = (function (){
     return{
       drawBricks : function(){
-          for(c = 0; c < Init.brickColumnCount; c++){
-              Init.bricks[c] = [];
-              for(r = 0; r < Init.brickRowCount; r++){
-                  Init.bricks[c][r] = {x : 0, y : 0};
+        for(c = 0; c < Init.brickColumnCount; c++){
+          if(!Init.bricks[c]){
+            Init.bricks[c] = [];
+            for(r = 0; r < Init.brickRowCount; r++){
+                Init.bricks[c][r] = {x : 0, y : 0, status : 1};
+
+            }
           }
         }
         for(c=0; c < Init.brickColumnCount; c++) {
         for(r=0; r < Init.brickRowCount; r++) {
+            if(Init.bricks[c][r].status == 1){
             Init.brickX = (c*(Init.brickWidth + Init.brickPadding)) + Init.brickOffsetLeft;
             Init.brickY = (r*(Init.brickHeight + Init.brickPadding)) + Init.brickOffsetTop;
             Init.bricks[c][r].x = Init.brickX;
@@ -19,14 +23,15 @@ var Bricks = (function (){
             Init.breakout.fill();
             Init.breakout.closePath();
           }
+          }
         }
       },
       brickHit : function(){
         for(c=0; c < Init.brickColumnCount; c++) {
              for(r=0; r < Init.brickRowCount; r++) {
-                 Init.b = Init.bricks[c][r];
-                 if(Init.x > Init.b.x && Init.x < Init.b.x+Init.brickWidth && Init.y > Init.b.y && Init.y < Init.b.y+Init.brickHeight) {
+                 if(Init.x > Init.bricks[c][r].x && Init.x < Init.bricks[c][r].x+Init.brickWidth && Init.y > Init.bricks[c][r].y && Init.y < Init.bricks[c][r].y+Init.brickHeight) {
                     Init.dy = -Init.dy;
+                    Init.bricks[c][r].status = 0;
                 }
              }
          }

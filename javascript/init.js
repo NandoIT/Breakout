@@ -22,7 +22,6 @@ var Init = (function(){
      brickColumnCount : 9,
      brickX : 0,
      brickY : 0,
-     b : 0,
      brickWidth : 55,
      brickHeight : 20,
      brickPadding : 20,
@@ -31,5 +30,6 @@ var Init = (function(){
      bricks : [],
 
   }
+
 
 })();
