@@ -7,7 +7,7 @@ var BrickHit = (function(){
                   if(Init.bricks[c][r].status !== 0){
                     Init.dy = -Init.dy;
                     Init.bricks[c][r].status = 0;
-                    console.log("score +1");
+                    Init.score++;
                   }
                }
             }
