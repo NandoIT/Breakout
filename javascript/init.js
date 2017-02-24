@@ -29,6 +29,8 @@ var Init = (function(){
      brickOffsetLeft : 10,
      bricks : [],
 
+     score : 0,
+
   }
 
 
