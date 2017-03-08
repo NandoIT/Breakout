@@ -8,7 +8,6 @@ var BrickHit = (function(){
                     Init.dy = -Init.dy;
                     Init.bricks[c][r].status = 0;
                     Init.score++;
-                    console.log("Hello");
                   }
                }
             }
