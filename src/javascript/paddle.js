@@ -7,5 +7,5 @@ var Paddle = (function(){
       Init.breakout.fill();
       Init.breakout.closePath();
     }
-  }
+  };
 })();

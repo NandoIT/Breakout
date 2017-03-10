@@ -26,5 +26,5 @@ var MovePaddle = (function (){
 					break;
 			}
 		}
-	}
+	};
 })();

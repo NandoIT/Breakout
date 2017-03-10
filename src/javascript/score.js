@@ -6,5 +6,5 @@ var Score = (function(){
           Init.breakout.fillText("Score: "+ Init.score, 8, 20);
 
         }
-    }
+    };
 })();

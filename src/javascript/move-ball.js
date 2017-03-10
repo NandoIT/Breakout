@@ -21,5 +21,5 @@ var MoveBall = (function(){
       Init.x += Init.dx;
       Init.y += Init.dy;
     }
-  }
+  };
 })();

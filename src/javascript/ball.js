@@ -7,5 +7,5 @@ var Ball = (function(){
       Init.breakout.fill();
       Init.breakout.closePath();
     }
-  }
+  };
 })();

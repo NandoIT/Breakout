@@ -7,5 +7,5 @@ var Elements = (function(){
       Paddle.drawPaddle();
       BrickHit.brickHit();
     }
-  }
+  };
 })();

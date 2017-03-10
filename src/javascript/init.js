@@ -31,7 +31,5 @@ var Init = (function(){
 
      score : 0,
 
-  }
-
-
+  };
 })();

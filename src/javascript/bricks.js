@@ -26,5 +26,5 @@ var Bricks = (function (){
           }
         }
       }
-    }
+    };
 })();

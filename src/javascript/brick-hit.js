@@ -13,5 +13,5 @@ var BrickHit = (function(){
             }
         }
     }
-  }
+  };
 })();
